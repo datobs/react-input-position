@@ -1,6 +1,6 @@
 import React from "react";
 
-const image = require("./sample-image.jpg");
+const image = require("./sample-image.jpg").default;
 
 const ImageExampleRenderer = props => {
   const { itemRef, itemPosition, active } = props;

@@ -1,7 +1,7 @@
 import { Children, cloneElement } from "react";
 
 function isReactComponent(element) {
-  return typeof element.type === "function";
+  return typeof element.type === "function" || typeof element.type.render === "function";
 }
 
 function decorateChild(child, props) {
